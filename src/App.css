@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+  color: #61dafb !important;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
 }
-
+h1 {
+  font-size: calc(1rem + 3vw);
+  text-transform: uppercase;
+  font-family: "Share Tech Mono", monospace;
+}
 .App-link {
   color: #61dafb;
 }
+.navigator {
+  color: #61dafb;
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  font-family: "Share Tech Mono", monospace;
+}
+.particlesCanva {
+  position: absolute;
+  background-color: black;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button1 {
+  background: #61dafb;
+  width: 25%;
+  min-width: 200px;
+  height: 70px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-radius: 40px;
+  font-family: "Abel", sans-serif;
+  font-size: 28px;
+  max-width: 1280px;
+  font-family: "Share Tech Mono", monospace;
+  margin: 10px auto;
+  padding: 0 20px;
+  outline: none;
+}
+
+.button1:hover {
+  background: black;
+  color: #61dafb;
+  outline: none;
+}
+
+.contain {
+  height: auto;
+  width: auto;
+
+  margin: 0 auto;
+}
+.wrapper {
+  padding: 0 48px;
+}
+
+/* Header */
+header {
+  height: 100px;
+  background: transparent;
+}
+.inner-header {
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 a {
+  position: absolute;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Share Tech Mono", monospace;
+  color: #61dafb;
+}
+
+.logo-active h2 a {
+  position: absolute;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-family: "Share Tech Mono", monospace;
+}
+.menu button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #61dafb;
+}
+
+/*Humburger menu*/
+.humburger-menu {
+  display: none;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  transition: all 0.8s;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-secondary-background-color {
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.menu-layer {
+  position: absolute;
+  background: #61dafb;
+  height: 100vh;
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+.menu-links nav {
+  display: block;
+  color: black;
+}
+.menu-links nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links nav ul li {
+  color: black;
+  text-decoration: none;
+  text-emphasis: none;
+  list-style: none;
+  font-size: 6rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  height: 135px;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
+}
+
+.menu-links nav ul li a {
+  position: absolute;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-links nav ul li a:hover {
+  color: white;
+}
+
+.info {
+  color: black;
+  width: 300px;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+.info h3 p {
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.socials {
+  position: absolute;
+  bottom: -80px;
+  color: black;
+  margin-top: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.socials span {
+  cursor: pointer;
+  margin: 0 32px;
+  transition: 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+.socials span:first-child {
+  margin-left: 64x;
+}
+
+.socials span:hover {
+  color: #fff;
+  background: black;
+  padding: 8px 24px;
+  border-radius: 4px;
 }
