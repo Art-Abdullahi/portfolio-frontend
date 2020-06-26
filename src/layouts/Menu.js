@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Humburger from "./Humburger";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { GrClose } from "react-icons/gr";
+import { GrClose, GrHome } from "react-icons/gr";
 import { Link, withRouter } from "react-router-dom";
 
 const Menu = ({ history }) => {
@@ -54,12 +54,20 @@ const Menu = ({ history }) => {
       <div className="contain">
         <div className="wrapper">
           <div className="inner-header">
+            <div className="home-icon">
+              <Link to="/">
+                <GrHome
+                  style={{
+                    color: "black",
+                    fontSize: "3rem",
+                    cursor: "pointer",
+                  }}
+                />
+              </Link>
+            </div>
             <div className={state.clicked ? "logo-active" : "logo"}>
               <Link to="/">
-                <h2>
-                  {" "}
-                  <a href="/">ABDULLAHI</a>
-                </h2>
+                <h2>ABDULLAHI</h2>
               </Link>
             </div>
             <div className="menu">

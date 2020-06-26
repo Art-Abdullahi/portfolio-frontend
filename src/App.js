@@ -8,7 +8,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div>
@@ -30,6 +30,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

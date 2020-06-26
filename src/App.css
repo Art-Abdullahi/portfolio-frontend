@@ -17,10 +17,13 @@ body {
   height: auto;
   margin-top: 5rem;
 }
-h1 {
+.App-header h1 {
   font-size: calc(1rem + 3vw);
   text-transform: uppercase;
   font-family: "Share Tech Mono", monospace;
+}
+.App-header img {
+  height: 220px;
 }
 .App-link {
   color: #61dafb;
@@ -74,10 +77,23 @@ h1 {
   padding: 0 48px;
 }
 
+.About h1 {
+  font-size: calc(2rem + 3vw);
+  text-transform: uppercase;
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+}
+
+.animate__animated.animate__bounceIn {
+  --animate-duration: 10s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 2s;
+}
 /* Header */
 header {
   height: 100px;
-  background: transparent;
 }
 .inner-header {
   position: relative;
@@ -88,7 +104,7 @@ header {
   align-items: center;
 }
 
-.logo h2 a {
+.logo h2 {
   position: absolute;
   font-weight: 700;
   text-decoration: none;
@@ -96,7 +112,7 @@ header {
   color: #61dafb;
 }
 
-.logo-active h2 a {
+.logo-active h2 {
   position: absolute;
   font-weight: 700;
   text-decoration: none;
@@ -120,9 +136,9 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  position: absolute;
-  transition: all 0.8s;
-  height: 100%;
+  position: fixed;
+
+  height: 100vh;
   width: 100%;
 }
 
@@ -166,7 +182,7 @@ header {
 .menu-links nav ul li {
   color: black;
   text-decoration: none;
-  text-emphasis: none;
+
   list-style: none;
   font-size: 6rem;
   font-weight: 700;
@@ -178,14 +194,9 @@ header {
   width: 700px;
 }
 
-.menu-links nav ul li a {
-  position: absolute;
-  color: black;
-  text-decoration: none;
-}
-
-.menu-links nav ul li a:hover {
+.menu-links nav ul li:hover {
   color: white;
+  text-decoration: none;
 }
 
 .info {
@@ -228,4 +239,79 @@ header {
   background: black;
   padding: 8px 24px;
   border-radius: 4px;
+}
+
+.home-icon {
+  display: none;
+}
+.icons {
+  display: none;
+}
+@media (max-width: 480px) {
+  .menu-links nav ul li {
+    font-size: 3rem;
+    align-items: center;
+    padding: 0;
+    font-weight: 700;
+  }
+  .info {
+    display: none;
+  }
+  .socials {
+    display: none;
+  }
+  .logo h2 {
+    display: none;
+  }
+  .logo-active h2 {
+    display: none;
+  }
+  .menu-links {
+    top: 200px;
+  }
+  .home-icon {
+    display: block;
+  }
+
+  .icons {
+    display: block;
+    position: absolute;
+
+    color: black;
+    top: 350px;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+  .icons span {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  .App-header {
+    padding: 50px;
+  }
+  .App-header h1 {
+    font-size: calc(1rem + 3vw);
+    text-transform: lowercase;
+    font-family: "Share Tech Mono", monospace;
+  }
+  .button1 {
+    background: #61dafb;
+    width: 15%;
+    min-width: 150px;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.8s;
+    border-radius: 40px;
+
+    font-size: 28px;
+    max-width: 1280px;
+    font-family: "Share Tech Mono", monospace;
+    margin: 10px auto;
+    padding: 0 20px;
+    outline: none;
+  }
+  .App-header img {
+    height: 300px;
+  }
 }

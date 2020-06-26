@@ -1,4 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import {
+  AiFillMediumCircle,
+  AiFillLinkedin,
+  AiFillInstagram,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
 const Humburger = ({ state }) => {
   let menu = useRef(null);
@@ -17,29 +23,25 @@ const Humburger = ({ state }) => {
   });
 
   return (
-    <div ref={(el) => (menu = el)} className="humburger-menu">
+    <div
+      ref={(el) => (menu = el)}
+      className="animate__animated animate__fadeInDown humburger-menu"
+    >
       <div className="menu-secondary-background-color"></div>
-      <div className="menu-layer"></div>
+      <div className="menu-layer "></div>
       <div className="contain">
         <div className="wrapper">
           <div className="menu-links">
             <nav>
               <ul>
                 <Link to="/projects">
-                  <li>
-                    <a href="/">Projects</a>
-                  </li>
+                  <li>Projects</li>
                 </Link>
                 <Link to="about">
-                  <li>
-                    {" "}
-                    <a href="/">About Me</a>
-                  </li>
+                  <li>About Me</li>
                 </Link>
                 <Link to="/contact">
-                  <li>
-                    <a href="/">Contact Me</a>
-                  </li>
+                  <li>Contact Me</li>
                 </Link>
               </ul>
             </nav>
@@ -49,6 +51,23 @@ const Humburger = ({ state }) => {
                 I promise to work hands on your project and satisfy you cause
                 thats my joy.
               </p>
+            </div>
+            <div className="icons">
+              <span>
+                <FaFacebookSquare />
+              </span>
+              <span>
+                <FaTwitterSquare />
+              </span>
+              <span>
+                <AiFillLinkedin />
+              </span>
+              <span>
+                <AiFillMediumCircle />
+              </span>
+              <span>
+                <AiFillInstagram />
+              </span>
             </div>
             <div className="socials">
               Socials:
