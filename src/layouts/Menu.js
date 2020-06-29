@@ -49,6 +49,9 @@ const Menu = ({ history }) => {
       });
     });
   });
+
+  //data
+
   return (
     <header>
       <div className="contain">

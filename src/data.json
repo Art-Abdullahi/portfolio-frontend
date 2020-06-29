@@ -1,0 +1,38 @@
+[
+  {
+    "projects": [
+      {
+        "id": 1,
+        "Name": "Mental Remedy",
+        "github_link": "http://github/art-abdullahi",
+        "link": "http://mental-remedy.netlify.app",
+        "image": "http://image1.com",
+        "description": "mental remedy was part of a project put together by andela and facebook where people from all over africa were gouped into tens and were told to choose a problem statement among the UN's sustainable development goals and come up witha software solution"
+      },
+      {
+        "id": 2,
+        "Name": "Intihaiy",
+        "github_link": "http://github/art-abdullahi",
+        "link": "http://intihaiy.firebase.app",
+        "image": "http://image1.com",
+        "description": "mental remedy was part of a project put together by andela and facebook where people from all over africa were gouped into tens and were told to choose a problem statement among the UN's sustainable development goals and come up witha software solution"
+      },
+      {
+        "id": 3,
+        "Name": "Foodhub",
+        "github_link": "http://github/art-abdullahi",
+        "link": "http://intihaiy.firebase.app",
+        "image": "http://image1.com",
+        "description": "mental remedy was part of a project put together by andela and facebook where people from all over africa were gouped into tens and were told to choose a problem statement among the UN's sustainable development goals and come up witha software solution"
+      },
+      {
+        "id": 4,
+        "Name": "Keyboard Warrior",
+        "github_link": "http://github/art-abdullahi",
+        "link": "https://art-abdullahi.github.io/keyboard-warrior/",
+        "image": "http://image1.com",
+        "description": "mental remedy was part of a project put together by andela and facebook where people from all over africa were gouped into tens and were told to choose a problem statement among the UN's sustainable development goals and come up witha software solution"
+      }
+    ]
+  }
+]

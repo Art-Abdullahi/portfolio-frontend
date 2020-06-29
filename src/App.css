@@ -128,6 +128,21 @@ header {
   color: #61dafb;
 }
 
+/*projects*/
+.projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.project {
+  width: "28rem";
+  height: "auto";
+  background-color: "black";
+}
+
 /*Humburger menu*/
 .humburger-menu {
   display: none;

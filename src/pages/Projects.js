@@ -1,21 +1,35 @@
-import React from "react";
-import { Project } from "../layouts/Project";
+import React, { Component } from "react";
+import Project from "../layouts/Project";
+import { Consumer } from "../components/context/DataProvider";
 
-const Projects = () => {
-  return (
-    <div
-      id="projects"
-      className="container"
-      style={{
-        height: "auto",
-        width: "100%",
-        border: "5px solid white",
-      }}
-    >
-      <h1 className="text-center ">featured preojects</h1>
-      <Project />
-    </div>
-  );
-};
+class Projects extends Component {
+  render() {
+    return (
+      <Consumer>
+        {(value) => {
+          const { projects } = value;
+
+          return (
+            <div>
+              <div className="projects">
+                <h1>Featured Projects</h1>
+                {projects.map((project) => (
+                  <div key={project.id} className="container">
+                    <Project
+                      name={project.repo_name}
+                      image={project.project_slides[0].img}
+                      des={project.description}
+                      link={project.repo_link}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        }}
+      </Consumer>
+    );
+  }
+}
 
 export default Projects;
