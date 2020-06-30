@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Project extends Component {
   render() {
     return (
-      <div className="project">
+      <div className="project ">
         <div>
           <div>
             <img src={this.props.image} alt="prof" height="220" />

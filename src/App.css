@@ -8,6 +8,13 @@ body {
   padding: 0;
   background-color: black !important;
   color: #61dafb !important;
+  position: relative;
+}
+
+h1 {
+  font-size: calc(1rem + 3vw);
+  text-transform: uppercase;
+  font-family: "Share Tech Mono", monospace;
 }
 
 .App-header {
@@ -52,7 +59,7 @@ body {
   cursor: pointer;
   transition: all 0.8s;
   border-radius: 40px;
-  font-family: "Abel", sans-serif;
+
   font-size: 28px;
   max-width: 1280px;
   font-family: "Share Tech Mono", monospace;
@@ -138,9 +145,10 @@ header {
 }
 
 .project {
-  width: "28rem";
+  width: 100%;
   height: "auto";
   background-color: "black";
+  text-align: center;
 }
 
 /*Humburger menu*/
@@ -262,6 +270,41 @@ header {
 .icons {
   display: none;
 }
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-next {
+  color: #61dafb !important;
+}
+
+.swiper-button-prev {
+  color: #61dafb !important;
+}
+
 @media (max-width: 480px) {
   .menu-links nav ul li {
     font-size: 3rem;

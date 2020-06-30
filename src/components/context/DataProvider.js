@@ -1,4 +1,5 @@
 import React, { Component, createContext } from "react";
+import startSlider from "../../swiper";
 
 export const DataContext = createContext();
 
@@ -7,6 +8,7 @@ class DataProvider extends Component {
     name: "ali",
     data: {},
     projects: [],
+    startSlider: () => startSlider(),
   };
 
   async componentDidMount() {
